@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/cas" >
+  <Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" 
+            maxActive="100" maxIdle="30" maxWait="10000" 
+            name="jdbc/geneDB" password="O15pgblG^" removeAbandoned="true" 
+            type="javax.sql.DataSource" 
+            url="jdbc:mysql://mysql.chpc.utah.edu:3306/younglabdb3" 
+            username="youngsvc"
+  />
+</Context>

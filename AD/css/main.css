@@ -1,0 +1,299 @@
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+} 
+
+.noradius {
+    border-radius: 0;
+}
+
+.noborder{
+    border-width: 0;
+    box-shadow: none;
+}
+
+.tab-content {
+    padding: 10px;
+}            
+
+.navbar-brand {
+  padding: 0px;
+}
+
+.navbar-brand > img {
+    height: 100%;
+    width: auto;   
+    padding: 8px;
+}            
+
+div.plotly-notifier {
+    visibility: hidden;
+}
+
+#slider1i {
+    width: 200px;
+}
+#slider1i .slider-handle {
+    background: #A0A0A0;
+    width: 10px;
+}
+#slider1i .slider-selection {
+    background: #C0C0C0;
+    box-shadow: none;
+    border-radius:0;
+}
+#slider1i .slider-track {
+    background: #E0E0E0;
+    box-shadow: none;
+    border-radius:0;
+}
+
+.list-group-item-narrow {
+    cursor: pointer;
+    padding: 7px 15px !important;
+}
+
+/* for ENST group */
+.btn-op1, .btn-op1.focus {
+    background-color: transparent;
+    color: #A0A0A0 !important;
+    border-radius:0 !important;
+}
+
+.btn-op1.active, .btn-op1.active.focus{
+    background-color: transparent;
+    color: #337ab7 !important;
+    font-weight: bold;    
+    border-color: #A5A5A5;
+    box-shadow: none;
+}
+
+.btn-op1.active:hover {
+    background-color: #FAFAFA;
+    border-color: #A5A5A5;
+}
+
+.btn-op1:hover {
+    background-color: #FAFAFA;
+}
+
+/* for option 2 */
+.btn-op2, .btn-op2.focus, .btn-op2:hover {
+    background-color: transparent;
+    color: #A0A0A0 !important;
+}
+
+.btn-op2.active, .btn-op2.active.focus, .btn-op2.active:hover {
+    background-color: transparent;
+    color: #337ab7 !important;
+    box-shadow: none;
+}
+
+/* for select all */
+.btn-all, .btn-all.focus, .btn-all:hover, .btn-all.active,
+.btn-all.active.focus, .btn-all.active:hover {
+    background-color: transparent;
+    color: #337ab7 !important;
+    box-shadow: none;
+}
+
+/* for select none */
+.btn-none, .btn-none.focus, .btn-none:hover,
+.btn-none.active.focus, .btn-none.active:hover, .btn-none.active {
+    background-color: transparent;
+    color: #A0A0A0 !important;
+    box-shadow: none;
+}
+
+.cancer-op-toggle, .cancer-op-toggle.focus, .cancer-op-toggle:hover,
+.cancer-op-toggle.active.focus, .cancer-op-toggle.active:hover, .cancer-op-toggle.active,
+.cancer-op-toggle-all, .cancer-op-toggle-all.focus, .cancer-op-toggle-all:hover,
+.cancer-op-toggle-all.active.focus, .cancer-op-toggle-all.active:hover, .cancer-op-toggle-all.active, 
+.cancer-tab-toggle, .cancer-tab-toggle.focus, .cancer-tab-toggle:hover,
+.cancer-tab-toggle.active.focus, .cancer-tab-toggle.active:hover, .cancer-tab-toggle.active {
+    background-color: transparent;
+    color: #606060 !important;
+    box-shadow: none;
+    border-width: 0 !important;
+}
+
+/*
+.table-borderless th {
+    font-weight: normal;
+}
+
+.table-borderless tbody tr td,
+.table-borderless tbody tr th,
+.table-borderless thead tr th,
+.table-borderless thead tr td,
+.table-borderless tfoot tr th,
+.table-borderless tfoot tr td {
+    border-width: 1px;
+}
+*/
+
+table tbody tr:hover {
+    background-color: #FAFAFA;
+}
+
+table tbody tr.nohover:hover {
+    background-color: transparent !important;
+}
+
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    right: 40px;
+    display:none;
+}
+
+.cancer_fcap:first-letter {
+    text-transform: uppercase !important;
+}
+
+.cancer_cap {
+    text-transform: capitalize !important;
+}
+
+.cancer_indent {
+    text-indent: 1em;
+}
+
+.monosp { 
+    font-family: monospace; 
+    white-space: pre;
+}                
+
+/*
+.wait {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+*/
+
+#opTab1 .nav-tabs .dropdown {
+  display: none;
+}            
+
+#taskTab1 .nav-tabs .dropdown {
+  display: none;
+} 
+
+#taskTab1 .nav-tabs .dropdown-menu > li {
+  display: none;
+} 
+
+.scroll_left {
+    max-height:350px;
+    overflow-y:auto;     
+}
+
+.cancer_vtab + .tooltip.in {
+    opacity: 1;
+    filter:alpha(opacity=100);
+}
+
+.cancer_vtab + .tooltip {
+    display: inline-block;
+}
+
+.cancer_vtab + .tooltip > .tooltip-inner {
+    min-width: 300px;
+    background-color: #FAFAFA;
+    color: #000000;
+    border: 1px solid #FAFAFA;
+    padding: 10px;
+    font-size: 14px;
+    text-align: left;
+}
+
+@media only screen and (max-width: 667px){
+    #taskTab1 .nav-tabs .dropdown {
+        display: inline-block;
+    }
+    #taskTab1 .nav-tabs > li:nth-of-type(n+4):nth-last-of-type(n+2) {
+        display : none;
+    }
+    #taskTab1 .nav-tabs .dropdown-menu > li:nth-last-child(-n+2) {
+        display : inline-block;
+    }
+}
+
+@media only screen and (max-width: 600px){
+
+    #taskTab1 .nav-tabs > li:nth-of-type(n+3):nth-last-of-type(n+2) {
+        display : none;
+    }
+    #taskTab1 .nav-tabs .dropdown-menu > li:nth-last-child(-n+3) {
+        display : inline-block;
+    }
+}
+            
+@media only screen and (max-width: 480px){
+    #taskTab1 .nav-tabs > li:nth-of-type(n+2):nth-last-of-type(n+2) {
+        display : none;
+    }
+    #taskTab1 .nav-tabs .dropdown-menu > li:nth-last-child(-n+4) {
+        display : inline-block;
+    }
+    
+}
+
+@media only screen and (max-width: 320px){
+    #opTab1 .nav-tabs .dropdown {
+        display: inline-block;
+    }
+    #opTab1 .nav-tabs > li:nth-of-type(n+2):nth-last-of-type(n+2) {
+        display : none;
+    }
+}
+
+.scale_place {
+    display: inline-block;
+    text-align:right;
+    min-width: 30px;
+}
+            
+.itemId_place {
+    display: inline-block;
+    min-width: 100px;
+}
+            
+.itemId_place_rna {
+    display: inline-block;
+    min-width: 150px;
+}
+
+.enst-each-move {
+    display: inline-block;
+    float: right;
+}            
+
+.text-muted-more {
+    color: #C0C0C0;
+}
+
+.notbold-right {
+    font-weight: normal;
+    float: right;
+}
+
+    
+#ICChart .legendtoggle {
+    display: none;
+}
+
+#ICChart .legendtext {
+    cursor: default;
+}    
+
